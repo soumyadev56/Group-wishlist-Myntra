@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png"
+      href="data:image/png;base64,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">
+
+    <link rel="stylesheet" href="group-wishlist-page.css">
+    <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+</head>
+<body>
+      <nav>
+            <div class="left">
+                <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png" alt="">
+                <ul>
+                    <li class="men">Men</li>
+                    <li class="women">Women</li>
+                    <li class="kids">Kids</li>
+                    <li class="homeliving">Home&Living</li>
+                    <li class="beauty">Beauty</li>
+                    <li class="studio">Studio</li>
+                </ul>
+            </div>
+            <div class="right">
+                <input placeholder="Search for products, brands and more" class="desktop-searchBar" value=""
+                    data-reactid="904">
+               
+            </div>
+            <div class="icons">
+                 
+                <div class="profile"><img src="assets/profile.svg"></div>
+                <a  class="groupwishlist" href="#" > <img src="assets/group.svg"></a>
+                <div class="wish"><img src="assets/heart.svg"></div>
+                <div class="bag"><img src="assets/shopping-bag-icon.svg" ></div>
+               
+            </div>
+        </nav>
+
+        <section class="wishlist-navigation">
+            <div class="banner">
+                  <div class="heading">
+                        
+                        <h1>Fashion Buddies</h1>
+                        <p> Group Wishlist</p>
+                        <p>10 items</p>
+                  </div>
+                  <div class="options">
+                        
+                        <a href="#"id="popup-trigger"><img class="myntra-ai" src="assets/myntra-ai.svg"></a>
+                            
+                        
+                        <a href="#"id="popup-trigger1"><img class="new-group" src="assets/plus-circle.svg"></a>
+                        <a href="#"id="popup-trigger2"><img class="group-icon" src="assets/group-team.svg"></a>
+                       <img class="edit-group" src="assets/edit.svg">
+                        <img class="share" src="assets/share-icon.svg">
+
+
+                  </div>
+                 
+           </div>
+           <div id="popup" class="popup">
+                <div class="popup-ai">
+                     <span class="close-btn" id="close-btn">&times;</span>
+                         <h2>Myntra AI</h2>
+                         <p class="ai-content">SAVE TIME AND GET BETTER RESULTS !</p>
+                         <img src="assets/robot-ai.svg" alt="Robot Image" class="robot-image">
+                        <p class="ai-content2">Get Recommendations based on your interest</p>
+                        <div class="button-container">
+                                <a href="#"id="openPopup-ai"><button class="button-primary">Check Recommendations</button></a>
+                            <a href="#"id ="open-popup-btn"><button class="button-secondary">Take a QUIZ</button></a>
+                      </div>
+                </div>      
+            </div>    
+            <div id="popup1" class="popup1">
+                <div class="popup-new-group">
+                    <span class="close-btn" id="close-btn">&times;</span>
+                    <h2 class="popup-new-group-content">Create a New Group</h2>
+                    <p class="new-group-content1">Add your family and friends and Enjoy Shopping Together!</p>
+                    <img src="assets/create-group-image.svg" alt="create group Image" class="create-group-image">
+                        
+                    <div class="button-container">
+                                <a href="createGroup.html"><button class="button-primary1">Generate Group</button></a>
+                        
+                    </div>
+                </div>
+            </div>         
+            <div id="popup2" class="popup2">
+                <div class="popup-group">
+                    <span class="close-btn" id="close-btn">&times;</span>
+                    <h2>Members</h2>
+            <ul id="member-list" class="member-list">
+                <li class="member-item">
+                    <span class="member-avatar" style="background-color: #f28b82;">R</span>
+                    <span class="member-name">Ravneet</span>
+                    <span class="remove-btn">&times;</span>
+                </li>
+                <li class="member-item">
+                    <span class="member-avatar" style="background-color: #fbbc04;">V</span>
+                    <span class="member-name">Vanshika</span>
+                    <span class="remove-btn">&times;</span>
+                </li>
+                <li class="member-item">
+                    <span class="member-avatar" style="background-color: #ffeb3b;">S</span>
+                    <span class="member-name">Soumya</span>
+                    <span class="remove-btn">&times;</span>
+                </li>
+                <li class="member-item">
+                    <span class="member-avatar" style="background-color: #bb86fc;">M</span>
+                    <span class="member-name">Muskan</span>
+                    <span class="remove-btn">&times;</span>
+                </li>
+            </ul>
+            <button class="add-members-btn">Add members to group</button>
+            <div class="invitation-options">
+                <span>Send Invitation</span>
+                <span>OR</span>
+                <span>Copy Link <a href="#"><img src="assets/link-icon.svg" alt="Copy Link Icon"></a></span>
+            </div>
+                </div>  
+            </div>   
+
+
+        <div id="quiz-popup" class="popup">
+            <div class="popup-content">
+                    <span id="close-popup-btn" class="close-btn">&times;</span>
+                    <h5>Take A Quiz to help us know you better!</h5>
+
+            <!-- Question 1 -->
+                <div class="question-container" id="question-1">
+                    <h4>1. Which one do you Prefer?</h4>
+                    <div class="options-quiz">
+                        <div class="option-quiz" data-answer="chic">
+                            <img src="assets/chic.jpg" alt="Chic" >
+                            <p>Chic</p>
+                        </div>
+                        <div class="option-quiz" data-answer="casual">
+                            <img src="assets/casual.jpg" alt="Casual">
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                 </div>
+
+            <!-- Question 2 -->
+                    <div class="question-container" id="question-2">
+                        <h4>2. Which outfit do you like better?</h4>
+                        <div class="options-quiz">
+                            <div class="option-quiz" data-answer="outfit1">
+                                <img src="assets/outfit1.jpg" alt="Outfit 1">
+                                <p>Outfit 1</p>
+                            </div>
+                            <div class="option-quiz" data-answer="outfit2">
+                                <img src="assets/outifit2.jpg" alt="Outfit 2" >
+                                <p>Outfit 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- Question 3 -->
+                <div class="question-container" id="question-3">
+                    <h4>3. Which bag do you prefer?</h4>
+                    <div class="options-quiz">
+                        <div class="option-quiz" data-answer="totebag">
+                            <img src="assets/totebag.jpg" alt="totebag">
+                            <p>Tote Bag</p>
+                        </div>
+                        <div class="option-quiz" data-answer="casual2">
+                            <img src="assets/crossbody-bag.jpg" alt="Crossbody-bag">
+                            <p class="crossbody-bag-text">Crossbody Bag</p>
+                        </div>
+                    </div>
+                </div>
+
+             <button id="submit-btn">Submit</button>
+            </div>
+        </div>
+        <div id="popup-ai-recommend" class="popup-ai-recommendation">
+            <div class="popup-content-ai-recommendation">
+                <span id="close" class="close-btn">&times;</span>
+                <h2>Myntra AI</h2>
+                <p class="ai-popup-content">Check out the recommendations based on your taste!</p>
+                <div class="recommendation-container-row1">
+                    <div class="product">
+                        <img src="assets/o1.png" alt="H&M Women V-neck Sweater Vest" class="o1">
+                        
+                    </div>
+                    <div class="product">
+                        <img src="assets/o2.png" alt="Roadster Striped Pure Cotton Top" class="o2">
+                       
+                    </div>
+                </div>
+                <button class="add-button"style="margin-right:90px ; margin-left:50px">Add to the list</button>
+                <button class="add-button">Add to the list</button>
+                <div class="recommendation-container-row2">  
+                    <div class="product">
+                        <img src="assets/o3.png" alt="H&M Linked Seam Detail Jumper" class="o3">
+                        
+                    </div>
+                    <div class="product">
+                        <img src="assets/o4.png" alt="H&M Women Cotton Cap" class="o4">
+
+                       
+                    </div>
+                </div>
+                <button class="add-button" style="margin-right:90px ; margin-left:50px" >Add to the list</button>   
+                <button class="add-button">Add to the list</button> 
+            </div>
+            
+        </div>  
+        </section>
+
+        
+       
+    <section class="wishlist-mainsection">
+            <div class="row1">
+                <ul class="cards">
+                     <li class="item1"><div class="top-card-bar"><img class="team-member" src="assets/r.svg"><div class="name-members">Ravneet</div></div><img class="image-container"src="assets/image1 (1).png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    
+                    </svg>
+                    <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div>
+                </li>
+                    <li class="item1"><div class="top-card-bar"><img class="team-member" src="assets/v.svg"><div class="name-members">Vanshika</div></div><img class="image-container"src="assets/image2.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                    <li class="item1"><div class="top-card-bar"><img class="team-member" src="assets/s.svg"><div class="name-members">Soumya</div></div><img class="image-container"src="assets/image3.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                    <li class="item1"><div class="top-card-bar"><img class="team-member" src="assets/m.svg"><div class="name-members">Muskan</div></div><img class="image-container"src="assets/image5.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+
+
+                    
+                </ul>
+            </div>
+            <div class="row2">
+                <ul class="cards">
+                    <li class="item2"><div class="top-card-bar"><img class="team-member" src="assets/m.svg"><div class="name-members">Muskan</div></div><img class="image-container"src="assets/image6.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                    <li class="item2"><div class="top-card-bar"><img class="team-member" src="assets/r.svg"><div class="name-members">Ravneet</div></div><img class="image-container"src="assets/image7.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                    <li class="item2"><div class="top-card-bar"><img class="team-member" src="assets/v.svg"><div class="name-members">Vanshika</div></div><img class="image-container"src="assets/image8.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                    <li class="item2"><div class="top-card-bar"><img class="team-member" src="assets/s.svg"><div class="name-members">Soumya</div></div><img class="image-container"src="assets/image9.png"><svg id="heart" class="heart" viewBox="0 0 24 24" width="100" height="100">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg> <div class="search-container">
+                        <input type="text" placeholder="Add Remarks" class="search-bar">
+                        <button class="search-button">Move to bag</button>
+                    </div></li>
+                </ul>
+            </div>
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+               
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+              
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                      
+    
+              
+    
+    
+    
+            
+    
+    
+      <script src="script.js"></script>
+        </section>
+</body>
