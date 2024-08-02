@@ -1,4 +1,3 @@
-# Group-wishlist-Myntra
 # Group Shopping Feature
 
 ## Overview
